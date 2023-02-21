@@ -1,0 +1,13 @@
+
+Stateless Widget: The widgets whose state can not be altered once they are built
+ are called stateless widgets.
+
+ A stateful widget is dynamic: for example, it can change its appearance in response to
+  events triggered by user interactions or when it receives data.
+  Checkbox , Radio , Slider , InkWell , Form , and TextField are examples of stateful widgets.
+
+  condition ? exp1 : exp2
+  If condition is true, evaluate exp1 else exp2
+
+  exp1 ?? exp2
+  if exp1 =! null, return its value else evaluate and return the value of exp2
