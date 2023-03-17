@@ -25,14 +25,6 @@ class CircleView extends StatelessWidget {
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                       color: Colors.blue,
-                      // image: DecorationImage(
-                      //   fit: BoxFit.cover,
-                      //   Image.asset(
-                      //     'assets/unsplash.jpg',
-                      //     height: 400,
-                      //     fit: BoxFit.cover,
-                      //   ), image: null,
-                      // ),
                     ),
                   ),
                 ),

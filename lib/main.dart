@@ -33,31 +33,6 @@ class _MyHomePageState extends State<MyHomePage> {
   // int _counter = 0;
  bool _pictureVisible = true ;
 
-  // void _incrementCounter() {
-  //   setState(() {
-  //     if(FloatingActionButton == Icons.add){
-  //       Visibility(
-  //         visible: false,
-  //         child: Image.asset(
-  //           'assets/unsplash.jpg',
-  //           height: 400,
-  //           fit: BoxFit.cover,
-  //         ),
-  //       );
-  //     } else if(FloatingActionButton == Icons.add_circle){
-  //       Visibility(
-  //         visible: true,
-  //         child: Image.asset(
-  //           'assets/unsplash.jpg',
-  //           height: 400,
-  //           fit: BoxFit.cover,
-  //         ),
-  //       );
-  //     }
-  //     // _counter++;
-  //   });
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,9 +57,12 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){ setState(() {
+        onPressed: (){
+          setState( () {
           _pictureVisible = !_pictureVisible;
-        });},
+        }
+           );
+          },
         tooltip: 'Change state of picture',
         child:
         _pictureVisible ? const Icon(Icons.add) : const Icon(Icons.remove),
